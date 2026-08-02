@@ -1,8 +1,18 @@
 aid: uno-health
 name: Uno Health
-description: 'Uno Health is a company surfaced as a portfolio company of cowboy-ventures, general-catalyst
-  and added to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: >-
+  Uno Health is a New York-based healthcare technology company that helps
+  Medicare members enroll in the government assistance programs they are
+  eligible for — such as SNAP and utility assistance — saving members an
+  average of $4,500 per year. Medicare Advantage health plans partner with
+  Uno's technology-driven member engagement platform to simplify eligibility
+  checks, subsidy enrollment, plan optimization, and benefits matching,
+  increasing Part C revenue, member retention, and star ratings. Members run a
+  5-minute savings check, upload enrollment documents, and track recurring
+  monthly savings through the Uno Health Member Portal. Backed by Cowboy
+  Ventures and General Catalyst. Uno Health publishes no public developer
+  program; its API (api.unohealth.com, AWS API Gateway) is private and
+  partner-facing.
 url: https://raw.githubusercontent.com/api-evangelist/uno-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +21,29 @@ x-backed-by:
 - general-catalyst
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://cdn.prod.website-files.com/655827fc6ec4f39efa885fd1/65c3a8dab371aebc7d9da316_256.png
 tags:
 - Company
 - Healthcare
+- Medicare
+- Benefits
+- Enrollment
+- Health Plans
+- Government Programs
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +53,32 @@ maintainers:
 common:
 - type: Website
   url: https://www.unohealth.com
+- type: TermsOfService
+  url: https://www.unohealth.com/legal/terms
+- type: PrivacyPolicy
+  url: https://www.unohealth.com/legal/privacy
+- type: Login
+  url: https://members.unohealth.com/login
+- type: SignUp
+  url: https://members.unohealth.com/public-eligibility
+- type: Support
+  url: mailto:info@hiuno.com
+- type: Careers
+  url: https://boards.greenhouse.io/unohealth
+- type: LinkedIn
+  url: https://www.linkedin.com/company/uno-health/
+- type: Twitter
+  url: https://twitter.com/uno_health
+- type: TrustCenter
+  url: security/uno-health-trust-center.yml
+- type: DomainSecurity
+  url: security/uno-health-domain-security.yml
+- type: WellKnown
+  url: well-known/uno-health-well-known.yml
+- type: LLMsTxt
+  url: llms/uno-health-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1

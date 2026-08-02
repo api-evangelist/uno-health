@@ -1,0 +1,22 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.unohealth.com (footer link) + DNS CNAME trust.unohealth.com -> trust.cname.drata.com
+name: Uno Health Trust Center
+url: https://trust.unohealth.com/
+platform: Drata
+evidence:
+- source: https://www.unohealth.com
+  detail: Homepage footer links to https://trust.unohealth.com/
+- source: dig trust.unohealth.com CNAME
+  detail: trust.cname.drata.com — Drata-hosted trust center, confirmed live (Drata SPA shell served)
+certifications: []
+notes: >-
+  The trust center exists and is Drata-hosted, but its content is a JS-rendered SPA
+  behind Cloudflare bot protection, so the certifications it lists could not be
+  verified by this pipeline. An earlier automated probe recorded SOC 2 / ISO 27001,
+  but those keywords came from Drata's own generic meta tags in the SPA shell, not
+  from Uno Health's published attestations — that false positive has been removed.
+  Uno Health's privacy policy (https://www.unohealth.com/legal/privacy) references
+  HIPAA protections for member health information (compliance contact:
+  compliance@hiuno.com), consistent with a HIPAA-regulated Medicare-services company,
+  but no certification is claimed here without verification.
